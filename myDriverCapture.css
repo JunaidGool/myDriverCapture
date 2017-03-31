@@ -1,0 +1,537 @@
+html{
+    background-color: black;
+}
+
+
+
+.driverHeading {
+	min-height: 100px;
+	margin-top: 100px;
+	width: 100%;
+	text-align: center center;;
+  color: silver;
+
+}
+
+.homePageButtons {
+	min-height: 100px;
+	margin-top: 100px;
+	width: 100%;
+	text-align: center;
+
+}
+
+
+.vehicleDisplayBtn {
+	display: inline-block;
+	color: #100;
+	background-color: lightsteelblue;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 50px;
+  right:25px;
+
+
+
+}
+
+.vehicleDisplayBtn:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0,0,0,0.5);
+}
+
+.vehicleDisplayBtn:active {
+  background-color: #CCC;
+  border-color: rgba(0,0,0,0.9);
+}
+
+
+.driverDisplayBtn {
+	display: inline-block;
+	color: #100;
+	background-color: pink;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 50px;
+  left: 0px;
+}
+
+.driverDisplayBtn:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0,0,0,0.5);
+}
+
+.driverDisplayBtn:active {
+  background-color: #CCC;
+  border-color: rgba(0,0,0,0.9);
+}
+
+
+.fuelDisplayBtn {
+	display: inline-block;
+	color: #100;
+	background-color: palegoldenrod;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 50px;
+  left: 25px;
+
+}
+
+.fuelDisplayBtn:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0,0,0,0.5);
+}
+
+.fuelDisplayBtn:active {
+  background-color: #CCC;
+  border-color: rgba(0,0,0,0.9);
+}
+
+
+.vehiclePage{
+
+  display: inline-block;
+	color: #100;
+	background-color: lightsteelblue;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 30px;
+  left:440px;
+  visibility: visible;
+
+}
+
+
+.vehicleHeading {
+	width: 100%;
+	position: relative;
+  color: silver;
+  left: 100px;
+  color: #100;
+}
+
+.vehicleParagraph{
+  width: 100%;
+	position: relative;
+  color: silver;
+  bottom: 15px;
+  color: #100;
+}
+
+.vehicleIDParagraph {
+  width: 100%;
+  position: relative;
+  color: silver;
+  color: #100;
+
+}
+
+.vehicleIDinput{
+  position: relative;
+  bottom: 10px;
+}
+
+.vehicleMakeParagraph {
+  width: 100%;
+	position: relative;
+  color: silver;
+  color: #100;
+
+}
+
+.vehicleMakeInput{
+	position: relative;
+  bottom: 10px;
+}
+
+.vehicleColorParagraph {
+  width: 100%;
+	position: relative;
+  color: silver;
+
+  color: #100;
+
+}
+
+.vehicleColorInput{
+  position: relative;
+  bottom: 10px;
+
+}
+
+
+.driverPage{
+
+  display: inline-block;
+	color: #100;
+	background-color: pink;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 30px;
+  left:60px;
+  visibility: visible;
+
+}
+
+.driverHeadingMain {
+	width: 100%;
+	position: relative;
+  color: silver;
+  left: 100px;
+  color: #100;
+}
+
+.driverNameInput {
+  position: relative;
+
+  bottom: 10px;
+
+}
+
+.driverIDinput {
+  position: relative;
+
+  bottom: 10px;
+
+}
+
+.driverAddressInput{
+  position: relative;
+
+  bottom: 10px;
+
+}
+
+.fuelPage{
+
+  display: inline-block;
+	color: #100;
+	background-color: palegoldenrod;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 30px;
+  right:700px;
+  visibility: visible;
+
+}
+
+.fuelPage2{
+
+  display: inline-block;
+	color: #100;
+	background-color: palegoldenrod;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 386px;
+  left:700px;
+  visibility: visible;
+
+}
+
+.driverNameFuelInput{
+  position: relative;
+
+  bottom: 10px;
+
+}
+
+.driverFuelCostInput{
+  position: relative;
+
+  bottom: 10px;
+
+}
+
+.driverFuelDateInput{
+  position: relative;
+
+  bottom: 10px;
+
+}
+
+.acceptInputBtn {
+	display: inline-block;
+	color: #100;
+	background-color: lightgreen;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 350px;
+  left:500px;
+
+}
+
+.acceptInputBtn:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0,0,0,0.5);
+}
+
+.acceptInputBtn:active {
+  background-color: #CCC;
+  border-color: rgba(0,0,0,0.9);
+}
+
+.viewResultsBtn {
+	display: inline-block;
+	color: #100;
+	background-color: #bfff00;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 350px;
+  left:550px;
+
+}
+
+.viewResultsBtn:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0,0,0,0.5);
+}
+
+.viewResultsBtn:active {
+  background-color: #CCC;
+  border-color: rgba(0,0,0,0.9);
+}
+
+.vehiclesTable{
+  position: relative;
+  color: white;
+  bottom: 500px;
+  visibility: hidden;
+
+}
+
+.driversTable{
+  position: relative;
+  color: white;
+  bottom: 550px;
+  visibility: hidden;
+
+}
+
+
+
+body {
+  font:15px arial,sans-serif;
+}
+h1 {
+  margin: 0 0 10px 0;
+  padding: 5px;
+  font-size: 24px;
+  background-color: #999;
+  color: #fff;
+}
+table {
+  margin: 10px;
+  width: 100%;
+
+}
+th, td {
+  padding: 5px;
+  border: 1px solid #999;
+}
+th {
+  background: black;
+}
+
+
+.acceptDriverInputBtn{
+	display: inline-block;
+	color: #100;
+	background-color: lightgreen;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 412px;
+  left:500px;
+
+}
+
+.acceptDriverInputBtn:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0,0,0,0.5);
+}
+
+.acceptDriverInputBtn:active {
+  background-color: #CCC;
+  border-color: rgba(0,0,0,0.9);
+}
+
+
+.viewDriverResultsBtn {
+	display: inline-block;
+	color: #100;
+	background-color: #bfff00;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 412px;
+  left:550px;
+
+}
+
+.viewDriverResultsBtn:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0,0,0,0.5);
+}
+
+.viewDriverResultsBtn:active {
+  background-color: #CCC;
+  border-color: rgba(0,0,0,0.9);
+}
+
+.acceptFuelInputBtn{
+	display: inline-block;
+	color: #100;
+	background-color: lightgreen;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 475px;
+  left:500px;
+
+}
+
+.acceptFuelInputBtn:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0,0,0,0.5);
+}
+
+.acceptFuelInputBtn:active {
+  background-color: #CCC;
+  border-color: rgba(0,0,0,0.9);
+}
+
+
+.viewFuelResultsBtn {
+	display: inline-block;
+	color: #100;
+	background-color: #bfff00;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  position: relative;
+  bottom: 475px;
+  left:550px;
+
+}
+
+.viewFuelResultsBtn:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0,0,0,0.5);
+}
+
+.viewFuelResultsBtn:active {
+  background-color: #CCC;
+  border-color: rgba(0,0,0,0.9);
+}
+
+.driverDropdown{
+  position: absolute;
+  bottom: 280px;
+  left:490px;
+}
+
+.container {
+
+  width: 80%;
+  margin: 15px auto;
+}

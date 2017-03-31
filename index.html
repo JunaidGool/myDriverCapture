@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="myDriverCapture.css">
+    <meta charset="utf-8">
+    <title>myDriverCapture</title>
+    <script src="handlebars-v4.0.5.js"></script>
+    <script src = "Chart.min.js"></script>
+  </head>
+  <body>
+
+    <div class="homePageButtons">
+
+      <h2 class="driverHeading">YOUR DRIVER MANAGEMENT APP</h2>
+
+
+      <p class="vehicleDisplayBtn" type="button" id="vehicleDisplayBtn">Vehicles</button>
+      <p class="driverDisplayBtn" type="button" id="driverDisplayBtn">Drivers</button>
+      <p class="fuelDisplayBtn" type="button" id="fuelDisplayBtn">&nbsp;&nbsp;&nbsp;&nbsp;Fuel&nbsp;&nbsp;&nbsp;</button>
+
+    </div>
+
+
+    <div class="vehiclePage" id="vehiclePage">
+      <h2 class="vehicleHeading">Vehicles</h2>
+      <p class="vehicleParagraph">capture all vehicle details here . . . </p>
+
+      <p class="vehicleIDParagraph"> Please Allocate Vehicle ID </p>
+        <input type="text" class="vehicleIDinput" id="vehicleIDinput" required ></input>
+
+        <p class="vehicleMakeParagraph"> Please Allocate Vehicle Make </p>
+          <input type="text" class="vehicleMakeInput" id="vehicleMakeInput" required ></input>
+
+          <p class="vehicleColorParagraph"> Please Enter Vehicle Color </p>
+            <input type="text" class="vehicleColorInput" id="vehicleColorInput" required ></input>
+            </div>
+
+
+    <div class="driverPage" id="driverPage">
+      <h2 class="driverHeadingMain">Drivers</h2>
+      <p class="vehicleParagraph">capture all driver details here . . . </p>
+
+      <p class="driverNameParagraph"> Please Enter Driver Name </p>
+        <input type="text" class="driverNameInput" id="driverNameInput" required></input>
+
+        <p class="driverIDparagraph"> Please Enter Driver ID </p>
+          <input type="text" class="driverIDinput" id="driverIDinput" required></input>
+
+          <p class="driverAddressParagraph"> Please Enter Driver Address </p>
+            <input type="text" class="driverAddressInput" id="driverAddressInput" required></input>
+
+          </div>
+
+
+    <div class="fuelPage" id="fuelPage">
+      <h2>Select Driver 1 for Comparison</h2>
+      <p>allocate all fuel expenses here .... </p>
+
+      <!-- <p class="driverFuelNameParagraph"> Please Select Driver Name </p> -->
+        <!-- <input type="text" class="driverNameFuelInput" id="driverNameFuelInput" required></input> -->
+        <div class="driverDropDownOutput" id="driverDropDownOutput">
+          <select class="" name="">
+          </select>
+        </div>
+
+        <p class="driverFuelCostParagraph"> Please Enter Week 1 Fuel Cost </p>
+          <input type="text" class="driverFuelCostInput" id="driverFuelCostInput" required></input>
+
+          <p class="driverFuelCostParagraph2"> Please Enter Week 2 Fuel Cost </p>
+            <input type="text" class="driverFuelCostInput2" id="driverFuelCostInput2" required></input>
+
+            <p class="driverFuelCostParagraph3"> Please Enter Week 3 Fuel Cost </p>
+              <input type="text" class="driverFuelCostInput3" id="driverFuelCostInput3" required></input>
+
+              <p class="driverFuelCostParagraph4"> Please Enter Week 4 Fuel Cost </p>
+                <input type="text" class="driverFuelCostInput4" id="driverFuelCostInput4" required></input>
+
+    </div>
+
+    <div class="fuelPage2" id="fuelPage2">
+      <h2>Select Driver 2 for Comparison</h2>
+      <p>allocate all fuel expenses here .... </p>
+
+      <!-- <p class="driverFuelNameParagraph"> Please Select Driver Name </p> -->
+        <!-- <input type="text" class="driverNameFuelInput" id="driverNameFuelInput" required></input> -->
+        <div class="driverDropDownOutput2" id="driverDropDownOutput2">
+          <select class="" name="">
+          </select>
+        </div>
+
+        <p class="driver2FuelCostParagraph"> Please Enter Week 1 Fuel Cost </p>
+          <input type="text" class="driver2FuelCostInput" id="driver2FuelCostInput" required></input>
+
+          <p class="driver2FuelCostParagraph2"> Please Enter Week 2 Fuel Cost </p>
+            <input type="text" class="driver2FuelCostInput2" id="driver2FuelCostInput2" required></input>
+
+            <p class="driver2FuelCostParagraph3"> Please Enter Week 3 Fuel Cost </p>
+              <input type="text" class="driver2FuelCostInput3" id="driver2FuelCostInput3" required></input>
+
+              <p class="driver2FuelCostParagraph4"> Please Enter Week 4 Fuel Cost </p>
+                <input type="text" class="driver2FuelCostInput4" id="driver2FuelCostInput4" required></input>
+
+    </div>
+
+    <div class="vehiclesButtons">
+    <p class="acceptInputBtn" type="button" id="acceptInputBtn">Accept Vehicles</button>
+      <p class="viewResultsBtn" type="button" id="viewResultsBtn">View Vehicles</button>
+    </div>
+
+    <div class="driversButtons">
+    <p class="acceptDriverInputBtn" type="button" id="acceptDriverInputBtn">Accept Drivers</button>
+      <p class="viewDriverResultsBtn" type="button" id="viewDriverResultsBtn">View Drivers</button>
+    </div>
+
+    <div class="fuelButtons">
+    <p class="acceptFuelInputBtn" type="button" id="acceptFuelInputBtn">Accept Fuel</button>
+      <p class="viewFuelResultsBtn" type="button" id="viewFuelResultsBtn">View Fuel</button>
+    </div>
+
+
+    <div class="vehiclesTable">
+      <div class="vehiclesTableOutput" id="vehiclesTableOutput"></div>
+        </div>
+
+    <script id="vehiclesTableTemplate" type="text/x-handlebars.template">
+
+      <table id="myVehiclesTable">
+      <thead class ="vehiclesTableHead">
+      <th>Vehicle ID</th>
+      <th>Vehicle Make</th>
+      <th>Vehicle Color</th>
+    </thead>
+    <tbody>
+        {{#tableVehicles}}
+        <tr>
+            <td>{{vehicleID}}</td>
+            <td>{{vehicleMake}}</td>
+            <td>{{vehicleColor}}</td>
+        </tr>
+        {{/tableVehicles}}
+    </tbody>
+</table>
+
+      </script>
+
+      <div class="driversTable">
+        <div class="driversTableOutput" id="driversTableOutput"></div>
+          </div>
+
+      <script id="driversTableTemplate" type="text/x-handlebars.template">
+
+        <table id="myDriversTable">
+        <thead class ="driversTableHead">
+        <th>Driver Name</th>
+        <th>Driver ID</th>
+        <th>Driver Address</th>
+      </thead>
+      <tbody>
+          {{#tableDrivers}}
+          <tr>
+              <td>{{driverName}}</td>
+              <td>{{driverID}}</td>
+              <td>{{driverAddress}}</td>
+          </tr>
+          {{/tableDrivers}}
+      </tbody>
+  </table>
+        </script>
+
+        <!-- <div class="driverDropdown">
+          <div class="driverDropDownOutput" id="driverDropDownOutput">
+            <select class="" name="">
+            </select>
+          </div>
+        </div> -->
+
+
+        <script id="driverDropDownTemplate" type="text/x-handlebars.template">
+
+        <div>
+        <select class="driverNameSelect" id="driverNameSelect">
+            <option value="">Select Driver Name</option>
+        {{#dropDownDrivers}}
+            <option value = "{{driverName}}">{{driverName}} </option>
+        {{/dropDownDrivers}}
+        </select>
+      </div>
+
+      </script>
+
+
+      <script id="driverDropDownTemplate2" type="text/x-handlebars.template">
+
+      <div>
+      <select class="driverNameSelect2" id="driverNameSelect2">
+          <option value="">Select Driver Name</option>
+      {{#dropDownDrivers2}}
+          <option value = "{{driverName}}">{{driverName}} </option>
+      {{/dropDownDrivers2}}
+      </select>
+    </div>
+
+    </script>
+
+
+        <div class="container">
+          <h2>Fuel Chart Demo</h2>
+          <div>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+
+
+    <script src = "myDriverCapture.js"></script>
+  </body>
+</html>
