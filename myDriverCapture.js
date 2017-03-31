@@ -8,6 +8,7 @@ document.getElementById("viewDriverResultsBtn").addEventListener("click", displa
 document.getElementById("viewFuelResultsBtn").addEventListener("click", myFuelChart);
 document.getElementById("acceptFuelInputBtn").addEventListener("click", fuelComparison1);
 document.getElementById("acceptFuelInputBtn").addEventListener("click", fuelComparison2);
+document.getElementById("acceptFuelInputBtn").addEventListener("click", fuelCompareDuplication);
 
 
 var myVehiclesScript = document.getElementById("vehiclesTableTemplate").innerHTML;
@@ -28,6 +29,45 @@ var drivers = [];
 var fuelComparison1 = [];
 var fuelComparison2 = [];
 
+ var vehiclesTableLocation = document.getElementById("vehiclesTableOutput");
+ var vehicles = "";
+ if (localStorage.getItem("vehicles")){
+     vehicles = JSON.parse(localStorage.getItem("vehicles"));
+ }
+ vehiclesTableLocation.innerHTML = myVehiclesTemplate({
+       tableVehicles: vehicles
+ });
+
+
+ var driversTableLocation = document.getElementById("driversTableOutput");
+ var drivers = "";
+ if (localStorage.getItem("drivers")){
+     drivers = JSON.parse(localStorage.getItem("drivers"));
+ }
+ driversTableLocation.innerHTML = myDriversTemplate({
+       tableDrivers: drivers
+ });
+
+ var dropDownLocation = document.getElementById("driverDropDownOutput");
+ var fuelComparison1 = "";
+ if (localStorage.getItem("drivers")){
+     drivers = JSON.parse(localStorage.getItem("drivers"));
+ }
+ dropDownLocation.innerHTML = myDriverDropDownTemplate({
+       dropDownDrivers: drivers
+ });
+
+
+
+ var dropDownLocation2 = document.getElementById("driverDropDownOutput2");
+ var fuelComparison2 = "";
+ if (localStorage.getItem("drivers")){
+     drivers = JSON.parse(localStorage.getItem("drivers"));
+ }
+
+ dropDownLocation2.innerHTML = myDriverDropDownTemplate2({
+       dropDownDrivers2: drivers
+ });
 
 function acceptVehicles(){
 
@@ -199,19 +239,31 @@ function fuelDisplay() {
   document.getElementById("fuelPage2").style.visibility = "visible";
   document.getElementById("chartTemp").style.visibility = "hidden";
 
-  document.getElementById("driverNameSelect").value = "";
+  // document.getElementById("driverNameSelect").value = "";
   document.getElementById("driverFuelCostInput").value = "";
   document.getElementById("driverFuelCostInput2").value = "";
   document.getElementById("driverFuelCostInput3").value = "";
   document.getElementById("driverFuelCostInput4").value = "";
 
-  document.getElementById("driverNameSelect2").value = "";
+  // document.getElementById("driverNameSelect2").value = "";
   document.getElementById("driver2FuelCostInput").value = "";
   document.getElementById("driver2FuelCostInput2").value = "";
   document.getElementById("driver2FuelCostInput3").value = "";
   document.getElementById("driver2FuelCostInput4").value = "";
 
-}
+};
+
+function fuelCompareDuplication (){
+
+  if (document.getElementById("driverNameSelect").value == document.getElementById("driverNameSelect2").value) {
+      document.getElementById("chartTemp").style.visibility = "hidden";
+
+      document.getElementById("driverNameSelect").value = "";
+      document.getElementById("driverNameSelect2").value = "";
+
+      alert ("invalid - Duplicate Driver Names")
+       }
+};
 
 
 function myFuelChart(){
@@ -230,6 +282,8 @@ function myFuelChart(){
   document.getElementById("driversTableOutput").style.visibility = "hidden";
   document.getElementById("fuelPage2").style.visibility = "hidden";
   document.getElementById("chartTemp").style.visibility = "visible";
+
+
 
 
 var ctx = document.getElementById('myChart').getContext('2d');
@@ -255,4 +309,9 @@ data: {
 }
 });
 
-}
+// if (document.getElementById("driverNameSelect").value == document.getElementById("driverNameSelect2").value) {
+//   document.getElementById("chartTemp").style.visibility = "hidden";
+//   alert ("invalid")
+// }
+
+};
