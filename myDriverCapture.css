@@ -2,8 +2,6 @@ html{
     background-color: black;
 }
 
-
-
 .driverHeading {
 	min-height: 100px;
 	margin-top: 100px;
@@ -128,9 +126,9 @@ html{
 	border: 1px solid rgba(0,0,0,0.3);
 	border-bottom-width: 3px;
   position: relative;
-  bottom: 30px;
+  bottom: 120px;
   left:440px;
-  visibility: visible;
+  visibility: hidden;
 
 }
 
@@ -208,9 +206,9 @@ html{
 	border: 1px solid rgba(0,0,0,0.3);
 	border-bottom-width: 3px;
   position: relative;
-  bottom: 30px;
+  bottom: 120px;
   left:60px;
-  visibility: visible;
+  visibility: hidden;
 
 }
 
@@ -259,8 +257,8 @@ html{
 	border-bottom-width: 3px;
   position: relative;
   bottom: 30px;
-  right:700px;
-  visibility: visible;
+  right:650px;
+  visibility: hidden;
 
 }
 
@@ -281,7 +279,7 @@ html{
   position: relative;
   bottom: 386px;
   left:700px;
-  visibility: visible;
+  visibility: hidden;
 
 }
 
@@ -320,8 +318,9 @@ html{
 	border: 1px solid rgba(0,0,0,0.3);
 	border-bottom-width: 3px;
   position: relative;
-  bottom: 350px;
-  left:500px;
+  bottom: 464px;
+  left:400px;
+  visibility: hidden;
 
 }
 
@@ -349,8 +348,9 @@ html{
 	border: 1px solid rgba(0,0,0,0.3);
 	border-bottom-width: 3px;
   position: relative;
-  bottom: 350px;
-  left:550px;
+  bottom: 464px;
+  left:480px;
+  visibility: hidden;
 
 }
 
@@ -367,7 +367,7 @@ html{
 .vehiclesTable{
   position: relative;
   color: white;
-  bottom: 500px;
+  bottom: 950px;
   visibility: hidden;
 
 }
@@ -375,7 +375,7 @@ html{
 .driversTable{
   position: relative;
   color: white;
-  bottom: 550px;
+  bottom: 950px;
   visibility: hidden;
 
 }
@@ -420,8 +420,9 @@ th {
 	border: 1px solid rgba(0,0,0,0.3);
 	border-bottom-width: 3px;
   position: relative;
-  bottom: 412px;
-  left:500px;
+  bottom: 525px;
+  left:420px;
+  visibility: hidden;
 
 }
 
@@ -450,8 +451,9 @@ th {
 	border: 1px solid rgba(0,0,0,0.3);
 	border-bottom-width: 3px;
   position: relative;
-  bottom: 412px;
-  left:550px;
+  bottom: 525px;
+  left:460px;
+  visibility: hidden;
 
 }
 
@@ -464,6 +466,7 @@ th {
   background-color: #CCC;
   border-color: rgba(0,0,0,0.9);
 }
+
 
 .acceptFuelInputBtn{
 	display: inline-block;
@@ -479,8 +482,9 @@ th {
 	border: 1px solid rgba(0,0,0,0.3);
 	border-bottom-width: 3px;
   position: relative;
-  bottom: 475px;
-  left:500px;
+  bottom: 510px;
+  left:425px;
+  visibility: hidden;
 
 }
 
@@ -509,8 +513,9 @@ th {
 	border: 1px solid rgba(0,0,0,0.3);
 	border-bottom-width: 3px;
   position: relative;
-  bottom: 475px;
-  left:550px;
+  bottom: 510px;
+  left:500px;
+  visibility: hidden;
 
 }
 
@@ -530,8 +535,10 @@ th {
   left:490px;
 }
 
-.container {
-
+.chartTemp {
+  position: relative;
   width: 80%;
-  margin: 15px auto;
+  margin: 10px auto;
+  bottom: 1050px;
+  visibility: hidden;
 }
