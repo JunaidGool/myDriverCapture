@@ -36,7 +36,7 @@ var fuelComparison1 = [];
 var fuelComparison2 = [];
 
  var vehiclesTableLocation = document.getElementById("vehiclesTableOutput");
- var vehicles = "";
+ var vehicleTableData = "";
  if (localStorage.getItem("vehicles")){
      vehicles = JSON.parse(localStorage.getItem("vehicles"));
  }
@@ -46,7 +46,7 @@ var fuelComparison2 = [];
 
 
  var driversTableLocation = document.getElementById("driversTableOutput");
- var drivers = "";
+ var driverTableData = "";
  if (localStorage.getItem("drivers")){
      drivers = JSON.parse(localStorage.getItem("drivers"));
  }
@@ -107,6 +107,7 @@ var fuelComparison2 = [];
  //     fuelComparison2 = JSON.parse(localStorage.getItem("fuelComparison2"));
  // }
  // fuelComparison2Location.innerHTML = document.getElementById("chartTemp")
+
 
 
 
