@@ -36,6 +36,8 @@
             </div>
 
 
+
+
     <div class="driverPage" id="driverPage">
       <h2 class="driverHeadingMain">Drivers</h2>
       <p class="vehicleParagraph">capture all driver details here . . . </p>
@@ -50,6 +52,8 @@
             <input type="text" class="driverAddressInput" id="driverAddressInput" required></input>
 
           </div>
+
+
 
 
     <div class="fuelPage" id="fuelPage">
@@ -190,7 +194,6 @@
 
 
       <script id="driverDropDownTemplate2" type="text/x-handlebars.template">
-
       <div>
       <select class="driverNameSelect2" id="driverNameSelect2">
           <option value="">Select Driver Name</option>
@@ -199,15 +202,49 @@
       {{/dropDownDrivers2}}
       </select>
     </div>
+    </script>
 
+    <script id="vehicleDropDownFilterTemplate" type="text/x-handlebars.template">
+      <div>
+      <select class="vehicleIdFilterSelect" id="vehicleIdFilterSelect">
+          <option value="">Select Vehicle ID</option>
+      {{#dropDownVehicles}}
+          <option value = "{{vehicleID}}">{{vehicleID}} </option>
+      {{/dropDownVehicles}}
+      </select>
+    </div>
+    </script>
+
+    <script id="driverDropDownFilterTemplate" type="text/x-handlebars.template">
+      <div>
+      <select class="driverFilterSelect" id="driverFilterSelect">
+          <option value="">Select Driver Name</option>
+      {{#driverDropDownFilter}}
+          <option value = "{{driverName}}">{{driverName}} </option>
+      {{/driverDropDownFilter}}
+      </select>
+    </div>
     </script>
 
 
         <div class="chartTemp" id="chartTemp">
-          <h2>Fuel Chart Demo</h2>
           <div>
             <canvas id="myChart"></canvas>
           </div>
+        </div>
+
+
+
+        <div class="vehicleDropDownOutput" id="vehicleDropDownOutput">
+          <select class="" name="">
+          </select>
+        </div>
+
+
+
+        <div class="driverFilterDropDownOutput" id="driverFilterDropDownOutput">
+        <select class="" name="">
+        </select>
         </div>
 
 

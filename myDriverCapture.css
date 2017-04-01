@@ -365,21 +365,24 @@ html{
 }
 
 .vehiclesTable{
-  position: relative;
+  position: absolute;
   color: white;
   bottom: 950px;
   visibility: hidden;
+  top: 250px;
+  left: 470px;
 
 }
 
 .driversTable{
-  position: relative;
+  position: absolute;
   color: white;
   bottom: 950px;
   visibility: hidden;
+  top: 250px;
+  left: 470px;
 
 }
-
 
 
 body {
@@ -539,6 +542,20 @@ th {
   position: relative;
   width: 80%;
   margin: 10px auto;
-  bottom: 1050px;
+  bottom: 950px;
+  visibility: hidden;
+}
+
+.vehicleDropDownOutput {
+  position: absolute;
+  bottom: 450px;
+  left: 150px;
+  visibility: hidden;
+}
+
+.driverFilterDropDownOutput {
+  position: absolute;
+  bottom:450px;
+  left: 150px;
   visibility: hidden;
 }
