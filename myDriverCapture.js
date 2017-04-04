@@ -90,9 +90,6 @@ var fuelComparison2 = [];
  });
 
 
-
-
-
  // var fuelComparison1Location = document.getElementById("chartTemp");
  // var fuelComparison1 = "";
  // if (localStorage.getItem("fuelComparison1")){
@@ -107,9 +104,6 @@ var fuelComparison2 = [];
  //     fuelComparison2 = JSON.parse(localStorage.getItem("fuelComparison2"));
  // }
  // fuelComparison2Location.innerHTML = document.getElementById("chartTemp")
-
-
-
 
 
 
